@@ -10,7 +10,7 @@ body {
       rgba(0, 0, 0, 0) 40%,
       rgba(0, 0, 0, 0.5) 70%
     ),
-    url(/img/wood.webp);
+    url(../img/wood.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
