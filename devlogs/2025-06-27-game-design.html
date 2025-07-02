@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Development Logs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5025c54355.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="/style/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="container">
+        <header>
+          <h1>LOST HOPE</h1>
+          <p class="subtext"><sub>Wave-based FPS</sub></p>
+          <nav>
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/devlogs.html">Devlogs</a></li>
+              <li><a href="/downloads.html">Downloads</a></li>
+            </ul>
+          </nav>
+          <img class="bloodstain" src="/img/blood_stain_hand.webp" />
+        </header>
+        <nav class="nav-devlogs">
+          <a></a>
+          <a href="/devlogs/2025-07-02-movement.html">Movement &gt;</a>
+        </nav>
+        <main>
+          <p class="devlog-date"><time>27/06/2025</time></p>
+          <h2>Game Design</h2>
+          <p>
+            Abandoned by your squad after an atomic nuke, fight through the
+            streets of New York, outnumbered, and hunted by the remnants of the
+            unlucky souls hit by the blast.
+          </p>
+          <section>
+            <h3>Potential Names</h3>
+            <ul>
+              <li>LOST HOPE</li>
+              <li>Here They Come</li>
+              <li>Left Behind</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Overview</h3>
+            <p>
+              LOST HOPE is a horror wave-based survival FPS with an emphasis on
+              satisfying gunplay.
+            </p>
+          </section>
+          <section>
+            <h3>Inspiration</h3>
+            <p>
+              Many different games have inspired the design of LOST HOPE, from
+              visuals to mechanics.
+            </p>
+            <section>
+              <h4>Killing Floor (2009)</h4>
+              <figure>
+                <img
+                  src="./2025-06-27-game-design/killing_floor_01.jpg"
+                  alt="Screenshot from Killing Floor"
+                />
+                <figcaption>
+                  Screenshot from
+                  <cite
+                    ><a
+                      href="https://store.steampowered.com/app/1250/Killing_Floor/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Killing Floor</a
+                    ></cite
+                  >
+                  by
+                  <cite
+                    ><a
+                      href="https://tripwireinteractive.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Tripwire Interactive</a
+                    ></cite
+                  >.
+                </figcaption>
+              </figure>
+              <p>
+                The gritty overrun look of Killing Floor has always been a
+                favourite of mine. The atmosphere of the game makes you feel
+                overpowered by the ZEDs (enemies) and it feels like you're truly
+                fighting for your survival.
+              </p>
+              <p>
+                The game uses Unreal Engine 2.5 which achieves its lighting
+                mainly through baked lightmaps and vertex lighting, with little
+                real-time lights. This should be fairly easy to replicate in
+                Unity.
+              </p>
+              <p>
+                Gunplay has always been Killing Floor's strong suit with
+                satisfying sounds, animations, and overall gun feel. This is
+                something I look to emulate in LOST HOPE.
+              </p>
+            </section>
+            <section>
+              <h4>Call of Duty: Zombies (2008)</h4>
+              <figure>
+                <img
+                  src="./2025-06-27-game-design/cod_perks.jpg"
+                  alt="Image of Call of Duty Zombies perks"
+                />
+                <figcaption>
+                  Image from
+                  <cite
+                    ><a
+                      href="https://gamerant.com/cod-bo6-black-ops-6-zombies-get-free-perkaholic-terminus-easter-egg/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Gamerant</a
+                    ></cite
+                  >
+                </figcaption>
+              </figure>
+              <p>
+                COD: Zombies perks are purchased mid-game with points earned
+                that game. They're non-permanent and must be unlocked each play
+                session. I like the idea of adding a similar system to LOST
+                HOPE.
+              </p>
+            </section>
+            <section>
+              <h4>PAYDAY 2 (2013)</h4>
+              <figure>
+                <img
+                  src="./2025-06-27-game-design/pd2_skilltree.jpg"
+                  alt="PAYDAY 2 skill tree"
+                />
+                <figcaption>
+                  Screenshot from
+                  <cite
+                    ><a
+                      href="https://store.steampowered.com/app/218620/PAYDAY_2/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >PAYDAY 2</a
+                    ></cite
+                  >
+                  by
+                  <cite
+                    ><a
+                      href="https://www.starbreeze.com/overkill/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >OVERKILL Software</a
+                    ></cite
+                  >.
+                </figcaption>
+              </figure>
+              <p>
+                PAYDAY's skill tree and builds are what kept me playing for over
+                a thousand hours. Coming up with interesting builds combining
+                different weapons, armour, perk decks, and skills to optimize
+                for the highest difficulty.
+              </p>
+              <p>
+                LOST HOPE will feature skill trees as its main way of providing
+                players with different play-styles.
+              </p>
+            </section>
+            <section>
+              <h4>Bulletstorm (2011)</h4>
+              <figure>
+                <img
+                  src="./2025-06-27-game-design/bulletstorm_skillshots.jpg"
+                  alt="Bulletstorm skillshots"
+                />
+                <figcaption>
+                  Screenshot from
+                  <cite
+                    ><a
+                      href="https://store.steampowered.com/app/501590/Bulletstorm_Full_Clip_Edition/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Bulletstorm</a
+                    ></cite
+                  >
+                  by
+                  <cite
+                    ><a
+                      href="https://peoplecanfly.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >People Can Fly</a
+                    ></cite
+                  >.
+                </figcaption>
+              </figure>
+              <p>
+                Bulletstorm's skillshot system adds variety to what I'd
+                otherwise consider rather bland gunplay. It encourages players
+                to experiment with different weapons and discover combos for big
+                point bonuses. Although rather arcadey, It's something I'm
+                considering adding. It helps keep the gameplay feeling fresh.
+              </p>
+            </section>
+            <section>
+              <h4>PIGFACE (2025)</h4>
+              <figure>
+                <img
+                  src="./2025-06-27-game-design/pigface_screenshot.jpg"
+                  alt="PIGFACE screenshot"
+                />
+                <figcaption>
+                  Screenshot from
+                  <cite
+                    ><a
+                      href="https://store.steampowered.com/app/3341650/PIGFACE/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >PIGFACE</a
+                    ></cite
+                  >
+                  by
+                  <cite
+                    ><a
+                      href="https://x.com/titolovesyou"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >titolovesyou</a
+                    ></cite
+                  >.
+                </figcaption>
+              </figure>
+              <p>
+                PIGFACE is another game I take visual inspiration from. I love
+                the PS2 era look with its bilinear blurry textures and
+                low-to-mid poly models.
+              </p>
+            </section>
+          </section>
+          <section>
+            <h3>World / Setting</h3>
+            <p>Dystopian world, post apocalypse similar to HL2</p>
+          </section>
+          <section>
+            <h3>Concept Art</h3>
+            <p>lololol</p>
+          </section>
+          <section>
+            <h3>Story</h3>
+            <p>Nuke goes off, left behind by your squad.</p>
+          </section>
+          <section>
+            <h3>Game Loop</h3>
+            <ol>
+              <li>Earn points by killing enemies</li>
+              <li>Spend points on weapons, ammo and perks</li>
+              <li>Defeat the final wave's boss</li>
+            </ol>
+          </section>
+          <section>
+            <h3>Game Mechanics</h3>
+            <section>
+              <h4>Combat</h4>
+              <p>Headshots</p>
+            </section>
+            <section>
+              <h4>Skill Tree</h4>
+              <p>
+                The skill tree will allow players to spend skill points to
+                increase base stats, unlock new abilities, and buff different
+                classes of weapons. Players are encouraged to experiment with
+                different skill combinations to create unique builds accustomed
+                to their play-style.
+              </p>
+              <p>
+                Skill points are unlocked by leveling up through regular
+                gameplay.
+              </p>
+            </section>
+            <section>
+              <h4>Progression</h4>
+              <p>
+                Players can increase their level by earning EXP. For each level
+                earned a skillpoint will be rewarded to spend on skills.
+              </p>
+              <p>Players will gain EXP by:</p>
+              <ul>
+                <li>Killing infected</li>
+                <ul>
+                  <li>Bonus for killing special infected</li>
+                </ul>
+                <li>Surviving waves/rounds</li>
+                <ul>
+                  <li>Bonus multiplier for surviving final boss round</li>
+                </ul>
+              </ul>
+            </section>
+          </section>
+        </main>
+        <nav class="nav-devlogs">
+          <a></a>
+          <a href="/devlogs/2025-07-02-movement.html">Movement &gt;</a>
+        </nav>
+        <footer>
+          <p>© 2025 Nick Dexter</p>
+          <div class="footer-links">
+            <i class="fa-brands fa-square-steam fa-lg"></i>
+            <i class="fa-brands fa-itch-io fa-lg"></i>
+            <i class="fa-brands fa-square-x-twitter fa-lg"></i>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
