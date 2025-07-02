@@ -23,7 +23,7 @@ body {
   overflow: hidden;
   width: 85ch;
   background-color: #fefced;
-  background-image: url(/img/paper.jpg);
+  background-image: url(../img/paper.jpg);
   margin-inline: 25vw;
   margin-block: 2.5rem;
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 1px, rgba(0, 0, 0, 0.09) 0 4px 2px,
